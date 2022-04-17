@@ -1,0 +1,629 @@
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+/* NavBar */
+nav {
+  height: 8vh;
+  background: linear-gradient(to right, #f67062, #fc5296);
+  position: relative;
+  width: 100%;
+}
+
+nav img {
+  height: 100%;
+  width: auto;
+}
+
+nav a {
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #424242;
+}
+
+nav a:hover {
+  color: #202020;
+}
+
+nav .container {
+  height: 100%;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* NavBar */
+
+/* Search */
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 10px 0;
+}
+
+.search input {
+  color: #ececec;
+  font-family: "Poppins";
+}
+
+/* Search */
+
+/* Body */
+.parent-container {
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-container .card {
+  width: 19%;
+  height: fit-content;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 600;
+  margin: 0.5%;
+  background: transparent;
+}
+
+.flex-container .card img {
+  height: 100%;
+  width: 100%;
+}
+
+.flex-container .card button {
+  border: 0;
+  background: #343434;
+  color: white;
+  outline: 0;
+}
+
+/* Body */
+
+/* Restaurant Info */
+
+.comment-container {
+  margin: 10px 0;
+  display: flex;
+  background: #424242;
+  padding: 5px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+/* Restaurant Info */
+
+.flex-parent {
+  display: flex;
+  color: white;
+  width: 100%;
+  font-family: "Poppins";
+}
+
+.flex-parent img {
+  width: calc(100% / 3);
+  height: auto;
+}
+
+.flex-child {
+  margin-left: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tags {
+  font-family: "Poppins";
+  background: #424242;
+  text-decoration: none;
+  padding: 3px 8px;
+  border-radius: 14px;
+  font-size: 12px;
+  margin-right: 7px;
+  text-align: center;
+}
+
+.restaurantInfo {
+  padding: 3% 10%;
+}
+
+/* Profile */
+.profile {
+  height: 90vh;
+  position: relative;
+}
+
+.profile-panel {
+  height: 600px;
+  width: 190px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -395px;
+  border-radius: 10px 0 0 10px;
+  background: #4d4d4d;
+  padding: 20px 30px;
+  color: white;
+  font-family: "Poppins";
+}
+
+.profile-panel h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.profile-panel button {
+  width: 100%;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+.profile-info {
+  background: #343434;
+  height: 600px;
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -205px;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  opacity: 100%;
+}
+
+.info-container {
+  position: relative;
+  height: 100%;
+}
+
+.info-wrapper {
+  width: fit-content;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-wrapper .MuiFormControl-root {
+  margin: 8px 0;
+  border-radius: 0;
+}
+
+.info-wrapper .MuiOutlinedInput-root {
+  border-radius: 5px;
+}
+.info-wrapper .MuiFormControl-root .MuiInputLabel-root {
+  font-size: 0.9rem;
+  margin-top: 1px;
+}
+
+/* Profile */
+
+/* Login */
+.login {
+  background-color: #ee9617;
+  background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+  height: 100vh;
+  position: relative;
+}
+
+.login-form .MuiFormControl-root {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.login-bg {
+  background: transparent;
+  height: 500px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -400px;
+  /* border-radius: 15px 0 0 15px; */
+  opacity: 100%;
+}
+
+.login-form a {
+  font-size: 13px;
+  font-family: "Poppins";
+  color: #ffffff;
+  font-style: italic;
+}
+
+.login-form a:hover {
+  color: #d3d3d3;
+}
+
+.login-form {
+  background: #202020;
+  height: 500px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 0;
+  /* border-radius: 0 15px 15px 0; */
+  padding: 20px 50px;
+  color: white;
+  opacity: 100%;
+}
+
+.login-form h1 {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Poppins";
+  margin-bottom: 20px;
+}
+
+.login-form button {
+  margin-top: 5px;
+  width: 300px;
+  text-align: center;
+  border: 0;
+  font-weight: 400;
+}
+
+/* Login */
+
+.options {
+  display: flex;
+  justify-content: flex-end;
+  height: 5vh;
+}
+
+.options .btn-add {
+  position: absolute;
+  right: 2%;
+  top: 12%;
+}
+
+/* Modals */
+
+.outer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+
+.inner-container {
+  display: flex;
+}
+
+/* Modals */
+
+.img-src {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-src button {
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+  margin: 0 5px 10px 0;
+  font-size: 13px;
+  background-color: #f44336;
+  color: white;
+}
+
+.gender-label {
+  margin-bottom: 2px;
+}
+
+.btn-action {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+}
+
+.btn-action button {
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+/* Communities */
+
+.container-grid {
+  padding: 0 0.5%;
+  font-family: Poppins;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 10px;
+  width: 100%;
+}
+
+.container-grid .card {
+  text-decoration: none;
+  color: white;
+  min-height: 60px;
+  background-color: #343434;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container-grid .card h5 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Communities */
+
+/* Community */
+.community .community-container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.community {
+  font-family: Poppins;
+  justify-content: center;
+  height: auto;
+  display: flex;
+}
+
+.community .community-container .cards-container .card .info-container {
+  color: white;
+  background: #343434;
+  width: 380px;
+  height: auto;
+  padding: 10px 20px;
+  display: flex-start;
+  border-radius: 5px;
+}
+
+.community
+  .community-container
+  .cards-container
+  .card
+  .info-container
+  .info-edit {
+  transition: 1s;
+}
+
+.community
+  .community-container
+  .cards-container
+  .card
+  .info-container
+  .info-edit {
+  padding: 5px;
+  background: transparent;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.community
+  .community-container
+  .cards-container
+  .card
+  .info-container
+  .info-edit
+  input {
+  font-family: Poppins;
+  color: white;
+}
+
+.community
+  .community-container
+  .cards-container
+  .card
+  .info-container
+  .info-edit
+  label {
+  font-family: Poppins;
+  color: white;
+}
+
+.community
+  .community-container
+  .cards-container
+  .card
+  .info-container
+  .info-edit
+  button {
+  background: #424242;
+  font-family: Poppins;
+  margin: 10px 0;
+}
+
+.community
+  .community-container
+  .cards-container
+  .card
+  .info-container
+  .info-edit
+  img {
+  width: 100%;
+  height: auto;
+}
+
+.community .community-container .community-heading {
+  display: flex;
+  color: white;
+  position: relative;
+  margin-bottom: 10px;
+  width: 380px;
+  justify-content: space-between;
+}
+
+.community .community-container .community-heading svg {
+  color: #fc5296;
+  margin-left: 5px;
+}
+
+.community .community-container .community-heading input {
+  background: #343434;
+  font-family: Poppins;
+  color: white;
+  font-size: 14px;
+}
+
+.community .community-container .cards-container .card .card-options {
+  height: fit-content;
+  visibility: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+.community .community-container .cards-container .card .card-options-active {
+  visibility: visible;
+  margin-left: 10px;
+  opacity: 1;
+  border-radius: 5px;
+  height: fit-content;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  color: #fc5296;
+  background: #343434;
+  padding: 5px;
+}
+
+.community .community-container .cards-container .card .card-options svg {
+  margin-bottom: 5px;
+}
+
+.community
+  .community-container
+  .cards-container
+  .card
+  .card-options-active
+  svg {
+  margin-bottom: 5px;
+}
+
+.community .community-container .cards-container .card {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+  border: 0;
+}
+
+.community .community-container .card .card-heading svg {
+  margin: 4px 0;
+}
+
+.community .community-container .card .card-heading svg:hover {
+  cursor: pointer;
+}
+
+.community .community-container .card .card-heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.community .community-container .card .card-image img {
+  display: flex;
+  margin: 0 auto 10px;
+  height: auto;
+  width: 340px;
+}
+.community .community-container .card .new-comment {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.community .community-container .card .new-comment textarea {
+  font-size: 13px;
+  font-family: Poppins;
+  color: white;
+}
+
+.community .community-container .card .new-comment .icon {
+  position: relative;
+  width: 10%;
+  margin-right: 0;
+}
+
+.community .community-container .card .new-comment .icon svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #424242;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  padding: 0 3px;
+  width: 100%;
+}
+
+.community .community-container .card .new-comment .icon svg:hover {
+  cursor: pointer;
+}
+
+.community .community-container .card .card-icon {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.community .community-container .card .card-icon svg {
+  margin-right: 5px;
+}
+
+.community .community-container .card .card-icon svg :hover {
+  cursor: pointer;
+}
+
+.community .community-container .card .card-comment {
+  background: #424242;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.community .community-container .card .card-comment textarea {
+  font-family: Poppins;
+  font-size: 13px;
+  color: white;
+}
+
+.community .community-container .card .card-comment .comment-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.community .community-container .card .card-comment h2 {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.community .community-container .card .card-comment .comment-header h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.community .community-container .card .card-comment .comment-header svg {
+  margin-left: 2px;
+  color: #fc5296;
+}
+
+.community .community-container .card .card-comment .comment-header svg:hover {
+  cursor: pointer;
+}
+/* Community */
